@@ -15,15 +15,12 @@ links = "zmq"
 [features]
 # Build libzmq from source.
 vendored = ['zeromq-src']
-# Build and link the vendored lib statically.
-static = []
 
 [dependencies]
 libc = "0.2.15"
 
 [build-dependencies]
 metadeps = "1"
-zeromq-src = { version = "0.1.2", optional = true }
 
 [package.metadata.pkg-config]
 libzmq = "4.1"
